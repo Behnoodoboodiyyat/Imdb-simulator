@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap"
+      rel="stylesheet"
+    />
+
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&family=Rubik+Microbe&display=swap" rel="stylesheet"> 
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&family=Rubik+Glitch&family=Rubik+Microbe&display=swap" rel="stylesheet"> 
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&family=Rubik+Glitch&family=Rubik+Marker+Hatch&family=Rubik+Microbe&display=swap" rel="stylesheet"> 
+
+    
+    <link rel="stylesheet" href="../style/searchPage.css" />
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+    <title>BeHo movie Website</title>
+  </head>
+  <body>
+    <div class="navbar">
+      <div class="navbar-container">
+        <div class="logo-container"><h1 class="logo">BeHo</h1></div>
+        <div class="menu-container">
+          <ul class="menu-list">
+            <li onclick="location.href='http://127.0.0.1:5500/index/index.html' " class="menu-list-item active">Home</li>
+            <li onclick="location.href='http://127.0.0.1:5500/index/moviesPage.html' "class="menu-list-item">Movies</li>
+            <li onclick="location.href='http://127.0.0.1:5500/index/seriesPage.html' " class="menu-list-item">Series</li>
+            <li onclick="location.href='http://127.0.0.1:5500/index/actorsPage.html'" class="menu-list-item">Artists</li>
+            <li class="menu-list-item">Trending</li>
+            <li class="menu-list-item">imdb250</li>
+          </ul>
+        </div>
+        <div class="profile-container">
+          <img class="profile-picture" src="../images/DSC_4245.jpg" alt="" />
+          <div class="profile-text-container">
+            <span class="profile-text">Profile</span>
+            <i class="fa-sharp fa-solid fa-caret-down"></i>
+          </div>
+          <div class="toggle">
+            <i class="fa-solid fa-moon toggle-icon"></i>
+            <i class="fa-solid fa-sun toggle-icon"></i>
+            <div class="toggle-ball"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="sidebar">
+      <a href="http://127.0.0.1:5500/index/index.html"><abbr title="Home"><i class="left-menu-icon fa-solid fa-house-chimney"></i></abbr></a>
+      <a href="http://127.0.0.1:5500/index/searchPage.html"><abbr title="Search"><i class="left-menu-icon fa-sharp fa-solid fa-magnifying-glass"></i></abbr></a>
+      <a href="http://127.0.0.1:5500/index/sign_in&log_in.html"><abbr title="Users"><i class="left-menu-icon fa-solid fa-users"></i></abbr></a>
+      <a href="http://127.0.0.1:5500/index/sign_in&log_in.html"><abbr title="Bookmark"><i class="left-menu-icon fa-solid fa-bookmark"></i></abbr></a>
+      <a href="http://127.0.0.1:5500/index/seriesPage.html"><abbr title="Series"><i class="left-menu-icon fa-solid fa-tv"></i></abbr></a>
+      <a href="http://127.0.0.1:5500/index/sign_in&log_in.html"><abbr title="Wacthlist"><i class="left-menu-icon fa-solid fa-hourglass"></i></abbr></a>
+      <a href="http://127.0.0.1:5500/index/sign_in&log_in.html"><abbr title="Shop"><i class="left-menu-icon fa-solid fa-cart-shopping"></i></abbr></a>
+    </div>
+
+    <div class="wrapper">
+        <div class="search_box_wrapper">
+            <div class="search_box_item search_box_item1">
+                <div class="search_box">
+                   <input type="text"name="search box" class="input_search" placeholder="search for anything you wish for?">
+                   <span class="icon">
+                        <ion-icon name="search-outline"></ion-icon>
+                   </span> 
+                </div>
+                <button>Search</button>
+            </div>
+        </div>
+    </div>
+
+    
+    <div class="footer">
+        <div class="Cont">
+          <div class="row">
+            <div class="footer-col">
+              <h4>Company</h4>
+              <ul>
+                <li><a href="#">about us</a></li>
+                <li><a href="#">our services</a></li>
+                <li><a href="#">privacy policy</a></li>
+                <li><a href="#">affiliate program</a></li>
+              </ul>
+            </div>
+            <div class="footer-col">
+              <h4>Get Help</h4>
+              <ul>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">shipping</a></li>
+                <li><a href="#">returns</a></li>
+                <li><a href="#">order status</a></li>
+                <li><a href="#">payment options</a></li>
+              </ul>
+            </div>
+            <div class="footer-col">
+              <h4>Online Shop</h4>
+              <ul>
+                <li><a href="#">movie</a></li>
+                <li><a href="#">series</a></li>
+                <li><a href="#">Screening</a></li>
+                <li><a href="#">accessories</a></li>
+              </ul>
+            </div>
+            <div class="footer-col">
+              <h4>Follow Us</h4>
+              <div class="social">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+<script src="../script/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap"
+    rel="stylesheet"
+  />
+    <link rel="stylesheet" href="../style/sign_in&log_in.css">
+    <link rel="stylesheet" href="../script/sign_in&log_in.js">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&family=Rubik+Microbe&display=swap" rel="stylesheet"> 
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&family=Rubik+Glitch&family=Rubik+Microbe&display=swap" rel="stylesheet"> 
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&family=Rubik+Glitch&family=Rubik+Marker+Hatch&family=Rubik+Microbe&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&family=Roboto:wght@100;300;400&family=Rubik+Glitch&family=Rubik+Marker+Hatch&family=Rubik+Microbe&display=swap" rel="stylesheet"> 
+    
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+  />
+    <title>BeHo movie Website</title>
+
+
+</head>
+<body>
+    <div class="navbar">
+        <div class="navbar-container">
+          <div class="logo-container"><h1 class="logo">BeHo</h1></div>
+          <div class="menu-container">
+            <ul class="menu-list">
+              <li onclick="location.href='http://127.0.0.1:5500/index/index.html' " class="menu-list-item active">Home</li>
+              <li onclick="location.href='http://127.0.0.1:5500/index/moviesPage.html' "class="menu-list-item">Movies</li>
+              <li onclick="location.href='http://127.0.0.1:5500/index/seriesPage.html' "class="menu-list-item">Series</li>
+              <li onclick="location.href='http://127.0.0.1:5500/index/actorsPage.html'" class="menu-list-item">Artists</li>
+              <li class="menu-list-item">Trending</li>
+              <li class="menu-list-item">imdb250</li>
+            </ul>
+          </div>
+          <div class="profile-container">
+            <img class="profile-picture" src="../images/DSC_4245.jpg" alt="" />
+            <div class="profile-text-container">
+              <span class="profile-text">Profile</span>
+              <i class="fa-sharp fa-solid fa-caret-down"></i>
+            </div>
+            <div class="toggle">
+              <i class="fa-solid fa-moon toggle-icon"></i>
+              <i class="fa-solid fa-sun toggle-icon"></i>
+              <div class="toggle-ball"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="sidebar">
+        <a href="http://127.0.0.1:5500/index/index.html"><i class="left-menu-icon fa-solid fa-house-chimney"></i></a>
+        <a href="http://127.0.0.1:5500/index/searchPage.html"><i class="left-menu-icon fa-sharp fa-solid fa-magnifying-glass"></i></a>
+        <a href="http://127.0.0.1:5500/index/sign_in&log_in.html"><i class="left-menu-icon fa-solid fa-users"></i></a>
+        <a href="http://127.0.0.1:5500/index/sign_in&log_in.html"><i class="left-menu-icon fa-solid fa-bookmark"></i></a>
+        <a href="http://127.0.0.1:5500/index/seriesPage.html"><i class="left-menu-icon fa-solid fa-tv"></i></a>
+        <a href="http://127.0.0.1:5500/index/sign_in&log_in.html"><i class="left-menu-icon fa-solid fa-hourglass"></i></a>
+        <a href="http://127.0.0.1:5500/index/sign_in&log_in.html"><i class="left-menu-icon fa-solid fa-cart-shopping"></i></a>
+      </div>
+
+    <div class="box">
+      <div class="Container">
+        <form class="form form-hidden" id="login">
+            <h1 class="form-title">Login</h1>
+            <div class="form-message form-message-error"></div>
+                <div class="form-input-group">
+                    <input type="text" class="form-input" autofocus placeholder="Username or E-mail">
+                    <div class="form-input-error-message"></div>
+                </div>
+                <div class="form-input-group">
+                    <input type="password" class="form-input" autofocus placeholder="Password">
+                    <div class="form-input-error-message"></div>
+                </div>
+                <button class="form-button" type="submit">Continue</button>
+                <p class="form-text">
+                    <a href="#" class="form-link">Forgot your password?</a>
+                </p>
+                <p class="form-text">
+                    <a  class="form-link"  href="" id="linkCreateAccount">Don't have an account? Create account</a>
+                </p>
+        </form>
+        <form class="form" id="createAccount">
+            <h1 class="form-title">Create Account</h1>
+            <div class="form-message form-message-error"></div>
+                <div class="form-input-group">
+                    <input type="text" id="signupUsername" class="form-input" autofocus placeholder="Username">
+                    <div class="form-input-error-message"></div>
+                </div>
+                <div class="form-input-group">
+                    <input type="text" class="form-input" autofocus placeholder="E-mail Address">
+                    <div class="form-input-error-message"></div>
+                </div>
+                <div class="form-input-group">
+                    <input type="password" class="form-input" autofocus placeholder="Password">
+                    <div class="form-input-error-message"></div>
+                </div>
+                <div class="form-input-group">
+                    <input type="password" class="form-input" autofocus placeholder="Confirm Password">
+                    <div class="form-input-error-message"></div>
+                </div>
+                <button class="form-button" type="submit">Continue</button>
+
+                <p class="form-text">
+                    <a  class="form-link"  href="" id="linkLogin">Already have an account? Sign in</a>
+                </p>
+        </form>
+      </div>
+    </div>
+
+    <script src="../script/sign_in&log_in.js"></script>
+</body>
+</html>
